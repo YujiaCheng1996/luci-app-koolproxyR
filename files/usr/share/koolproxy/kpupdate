@@ -117,7 +117,7 @@ update_rules() {
 	         wget 'https://cdn.jsdelivr.net/gh/ycg31/KoolProxy/rules/yhosts.txt' -q -O $KP_DIR/data/rules/yhosts.txt
 	         wget 'https://cdn.jsdelivr.net/gh/ycg31/KoolProxy/rules/fanboy.txt' -q -O $KP_DIR/data/rules/fanboy.txt
 	         wget 'https://cdn.jsdelivr.net/gh/ycg31/KoolProxy/rules/easylistchina.txt' -q -O $KP_DIR/data/rules/easylistchina.txt
-	         wget 'https://cdn.jsdelivr.net/gh/user1121114685/koolproxyR/koolproxyR/koolproxyR/data/koolproxyR_ipset.conf' -q -O $KP_DIR/koolproxy_ipset.conf
+	         wget 'https://cdn.jsdelivr.net/gh/ycg31/KoolProxy/rules/koolproxy_ipset.conf' -q -O $KP_DIR/koolproxy_ipset.conf
                  easylist_rules_local=`cat /usr/share/koolproxy/data/rules/easylistchina.txt  | sed -n '3p'|awk '{print $3,$4}'`
                  fanboy_rules_local=`cat /usr/share/koolproxy/data/rules/fanboy.txt  | sed -n '3p'|awk '{print $3,$4}'`
                  replenish_rules_local=`cat /usr/share/koolproxy/data/rules/yhosts.txt | sed -n '2p' | cut -d "=" -f2`
